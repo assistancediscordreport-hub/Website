@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <div class="icon">💬</div>
+    </div>
+
+    <h1>Database</h1>
+
+    <form>
+
+        <label>Project Name</label>
+        <input type="text" placeholder="Enter project name">
+
+        <div class="row">
+
+            <div class="field">
+                <label>Version</label>
+                <input type="text" placeholder="v1.0">
+            </div>
+
+            <div class="field">
+                <label>Status</label>
+                <input type="text" placeholder="Active">
+            </div>
+
+        </div>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@email.com">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <p class="footer">
+        Explore data, trends, and analytics in a modern dashboard.
+        Transparency reports cover system activity, policies,
+        and operational insights.
+    </p>
+
+</div>
+
+</body>
+</html>
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#202225;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:360px;
+    background:#2b2d31;
+    border-radius:18px;
+    padding:32px;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+.logo{
+    display:flex;
+    justify-content:center;
+}
+
+.icon{
+    width:90px;
+    height:90px;
+    background:#5865F2;
+    border-radius:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    color:white;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    font-size:42px;
+    margin:20px 0 30px;
+    font-family:Georgia,serif;
+}
+
+label{
+    color:#fff;
+    display:block;
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:600;
+}
+
+input{
+    width:100%;
+    height:46px;
+    background:#1f2225;
+    border:none;
+    border-radius:8px;
+    padding:0 15px;
+    color:white;
+    margin-bottom:18px;
+    outline:none;
+    font-size:15px;
+}
+
+input::placeholder{
+    color:#8d9299;
+}
+
+.row{
+    display:flex;
+    gap:14px;
+}
+
+.field{
+    flex:1;
+}
+
+button{
+    width:100%;
+    height:46px;
+    border:none;
+    border-radius:8px;
+    background:#5865F2;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    background:#4752c4;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:#b5bac1;
+    font-size:13px;
+    line-height:1.4;
+}
